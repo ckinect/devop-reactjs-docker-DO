@@ -16,7 +16,7 @@ jobs:
           node-version: "13.10"
       - name: Install npm and run unittest
         run: |
-          npm install
+          npm
           npm test
         env:
           CI: true
@@ -27,5 +27,5 @@ jobs:
           registry: docker.pkg.github.com
         username: ${{ secrets.GITHUB_USERNAME }}
         password: ${{ secrets.GITHUB_TOKEN }}
-          dockerfile: Dockerfile
+          dockerfile: Dockerfile-prod
           tags: latest
