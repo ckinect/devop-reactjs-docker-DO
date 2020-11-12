@@ -1,0 +1,31 @@
+name: build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 13.10
+        uses: actions/setup-node@v1
+        with:
+          node-version: "13.10"
+      - name: Install npm and run unittest
+        run: |
+          npm
+          npm test
+        env:
+          CI: true
+      - name: Publish to Github Packages Registry
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          name: ckinect/devop-reactjs-docker-DO/my-app
+          registry: docker.pkg.github.com
+          username: ${{ ckinect }}
+          password: ${{ 178f577ea50b9d8b58e366ca49665957e2953c76 }}
+          dockerfile: Dockerfile
+          tags: latest
