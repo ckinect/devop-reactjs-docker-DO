@@ -25,7 +25,7 @@ jobs:
         with:
           name: ckinect/devop-reactjs-docker-DO/my-app
           registry: docker.pkg.github.com
-          username: ${{ ckinect }}
-          password: ${{ 178f577ea50b9d8b58e366ca49665957e2953c76 }}
+        username: ${{ secrets.GITHUB_USERNAME }}
+        password: ${{ secrets.GITHUB_TOKEN }}
           dockerfile: Dockerfile
           tags: latest
