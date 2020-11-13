@@ -9,7 +9,7 @@ At the time of writing, I am unable to link Github package to deploy onto Netlif
 Deployment to Netlify is done by authorizing Netlify to read Github repository. Any code change in github will automatically 
 deploy to Netlify.
 
-![DevOps](Devops.png?raw=true "Devops")
+![DevOps](pipeline.JPG?raw=true "Devops")
 
 ## Prerequisites
 #### A Github account
