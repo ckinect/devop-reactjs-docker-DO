@@ -14,9 +14,13 @@ deploy to Netlify.
 ## Prerequisites
 #### A Github account
 #### A Netlify account
+#### Docker installed on local machine
+#### Vscode with Docker Plugin
 
 ## Get The React App
 #### Either download the Zip file or use git clone
+#### Once download, type "docker build -t my-app:dev ." to create and tag docker image
+#### To run docker, type "docker run -itd -p 80:80 --rm my-app:dev"
 
 ### To CheckIn, 👉 run the following
 #### git add -A
