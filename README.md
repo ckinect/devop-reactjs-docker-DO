@@ -29,3 +29,8 @@ deploy to Netlify.
   
 ## Github Action [Build With Docker] 
 ![Build](Build.JPG?raw=true "Build")
+
+
+## Future Improvement
+#### Add Backlog/Kanban workflow integration such Confluence or Ansana
+#### Integration with DigitalOcean with Docker support
