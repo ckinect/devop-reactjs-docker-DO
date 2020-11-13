@@ -6,7 +6,7 @@ In this use case we use React app as our code along with Docker to standardize t
 and Github Actions which performs code compilation when there "code checkin" to main branch.
 
 At the time of writing, I am unable to link Github package to deploy onto Netlify. Instead the following approach is used 👉
-Deployment to Netlify is done by authorizing Netlify to read Github repository. Any code change in github will automatically 
+Authorizing Netlify to read Github repository. Any code change in github will automatically 
 deploy to Netlify.
 
 ![DevOps](pipeline.JPG?raw=true "Devops")
